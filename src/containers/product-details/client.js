@@ -26,10 +26,7 @@ export const ProductDetailsClient = ({ product }) => {
             alt={title}
             width={300}
             height={320}
-            style={{
-              height:"320px"
-            }}
-            className="object-contain"
+            className="h-80 object-contain"
           />
         </div>
         <div className="flex-1 ">
@@ -107,9 +104,6 @@ export const ProductDetailsClient = ({ product }) => {
                   alt={title}
                   height={320}
                   width={300}
-                  style={{
-                    height:"320px"
-                  }}
                   className="h-80 object-contain"
                 />
               </div>
