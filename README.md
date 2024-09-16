@@ -14,6 +14,9 @@ then:
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deployed App:
+https://reservi-challenge.vercel.app/
+
 ##Features:
 
 - Landing page with top sellers products.
