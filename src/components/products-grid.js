@@ -1,5 +1,5 @@
 "use client"
-import { ProductCard } from "../product-card/product-card"
+import { ProductCard } from "./product-card"
 
 export const ProductsGrid = async ({data=[]}) => {
     return (

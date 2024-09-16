@@ -1,3 +1,4 @@
-export { Footer } from './footer/footer';
-export { Navbar } from './navbar/server';
-export { ProductsGrid } from './products-grid/products-grid';
+export { ProductsGrid } from './products-grid';
+export { ProductCard } from './product-card';
+export { SearchInput } from './search-input';
+export { Logo } from './logo';

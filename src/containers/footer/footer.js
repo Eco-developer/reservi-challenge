@@ -1,3 +1,4 @@
+import { Logo } from "@/components";
 import Image from "next/image";
 import Link from "next/link"
 
@@ -25,13 +26,7 @@ export const Footer = () => {
     return (
         <footer className="w-full bg-primary flex justify-center border-t-2 border-[#E0D348]">
             <div className="w-full p-6 flex flex-col md:p-10 lg:py-14 lg:px-10 md:flex-row md:justify-between max-w-[1200px]">
-                <Link href="/">
-                    <Image
-                        src={"/images/logo_large_25years_v2.png"}
-                        height={34}
-                        width={134}
-                    />
-                </Link>
+                <Logo/>
                 <div className="border-b-2 border-[#E0D348] flex flex-col pb-5 mb-5 max-w-80 text-black">
                     <p className="text-center md:text-start">
                         Copyright © 1998-2024 Eco Developer.
