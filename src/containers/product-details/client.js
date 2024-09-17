@@ -20,8 +20,8 @@ export const ProductDetailsClient = ({ product}) => {
   } = product;
   return (
     <div className="max-w-7xl mx-auto p-6 bg-white shadow-md rounded-lg mt-8">
-      <div className="flex flex-col md:flex-row gap-8">
-        <div className="rounded-lg mb-5 md:mb-0 flex justify-center md:w-96">
+      <div className="flex flex-col lg:flex-row gap-8">
+        <div className="rounded-lg mb-5 lg:mb-0 flex justify-center lg:w-96">
           <Image
             src={pictures[0] ? pictures[0].url : thumbnail}
             alt={title}
