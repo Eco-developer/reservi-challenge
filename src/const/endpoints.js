@@ -3,4 +3,5 @@ export const ENDPOINTS = {
     SEARCH: "/sites/MCO/search",
     ITEMS: "/items/",
     CATEGORIES: "/categories/",
+    CHECKOUT: "/api/create-checkout-session",
 }

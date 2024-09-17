@@ -1,3 +1,4 @@
+import { ENDPOINTS } from "@/const/endpoints";
 import { currencyFormat } from "@/utils"
 import axios from "axios";
 
@@ -16,7 +17,7 @@ export const DetailsInfo = ({
 }) =>  {
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('/api/create-checkout-session', {
+      const response = await axios.post(ENDPOINTS.CHECKOUT, {
         id,
         price,
         name: title,
