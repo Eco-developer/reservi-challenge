@@ -4,6 +4,7 @@ import {
 } from "@/containers";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ScrollToTop } from "@/components";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ScrollToTop/>
         <Navbar/>
         <main className="min-h-screen flex justify-center pt-32 pb-14 bg-[#f4f4f4]">
           <div className="max-w-[1200px] px-6 lg:px-10">
