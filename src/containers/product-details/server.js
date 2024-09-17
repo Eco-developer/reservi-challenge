@@ -8,6 +8,7 @@ export const ProductDetailsServer = async ({slug}) => {
   const { data } = await handleRequest({
     url: `${ENDPOINTS.ITEMS}${slug}`
   });
+  
   return (
     data ? (
       <ProductDetailsClient product={data}/>

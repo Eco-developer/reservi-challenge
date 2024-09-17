@@ -10,7 +10,8 @@ export const DetailsInfo = ({
     seller_id,
     official_store_id,
     date_created,
-    last_updated
+    last_updated,
+    handleSubmit
 }) =>  (
     <div className="flex-1 ">
         <h1 className="text-4xl font-bold text-gray-800 mb-5">{title}</h1>
@@ -35,14 +36,12 @@ export const DetailsInfo = ({
               </span>
             )}
         </div>
-        <a
-            href={permalink}
-            target="_blank"
-            rel="noopener noreferrer"
+        <button
+            onClick={handleSubmit}
             className="inline-block px-8 py-3 bg-yellow-500 text-white font-semibold rounded-lg shadow-md hover:bg-yellow-600 transition duration-300"
         >
             Comprar ahora
-        </a>
+        </button>
         <div className="mt-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-5">
               Información adicional
