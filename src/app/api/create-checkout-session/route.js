@@ -6,8 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY);
 export async function POST(req, res) {
     try {
         const body = await req.json()
-        const { quantity, price, name, imagen } = body;
-        console.log(body, process.env.STRIPE_PRIVATE_KEY);
+        const { id, price, name, imagen } = body;
         const session = await stripe.checkout.sessions.create({
             payment_method_types: ['card'],
             line_items: [
@@ -20,14 +19,14 @@ export async function POST(req, res) {
                     images: [imagen],
                 },
                 },
-                quantity,
+                quantity: 1,
             },
             ],
             mode: 'payment',
-            success_url: process.env.COMPLATION_URL,
-            cancel_url: process.env.COMPLATION_URL,
+            success_url: `${process.env.COMPLATION_URL}/product/${id}`,
+            cancel_url: `${process.env.COMPLATION_URL}/product/${id}`,
+            locale: 'es'
         });
-        console.log(body);
         return NextResponse.json({ message: 'Checkout session created successfully', url: session.url });  
 
     } catch (err) {
