@@ -20,3 +20,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - Landing page with top sellers products.
 - Category page with 50 available products.
 - Product detail page.
+- Payment with Stripe.
